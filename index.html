@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MN588 | 2026新山下水、按摩、小姐伴游自由身预约信息导航 (KSL/富力/金海湾)</title>
+  <meta name="description" content="找新山按摩下水服务？MN588 汇总 2026 最新小姐与自由身行程，深度解析 KSL、金海湾、CIQ 关卡商圈行情。提供新加坡游客专属避雷指南与实时名单。">
+  <link rel="icon" type="image/png" href="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png">
+  <link rel="canonical" href="https://mn588.com/">
+  
+  <link rel="preload" as="image" href="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear%20(2).png" fetchpriority="high">
 
+  <style>
+    :root { --accent: #ffcc00; --bg: #000; --text: #fff; --card: #121212; --border: #2a2a2a; }
+    body { font-family: system-ui,-apple-system,sans-serif; margin: 0; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+    .container { width: 92%; max-width: 1100px; margin: 0 auto; }
+    
+    /* Header */
+    header { height: 65px; display: flex; align-items: center; border-bottom: 1px solid var(--border); background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+    .nav-flex { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 32px; width: auto; }
+    .lang-btn { font-size: 13px; border: 2px solid var(--accent); padding: 5px 16px; border-radius: 20px; color: var(--accent); text-decoration: none; font-weight: bold; }
+
+    /* Hero */
+    .hero { position: relative; height: 480px; display: flex; align-items: center; justify-content: center; text-align: center; background: #0a0a0a; overflow: hidden; }
+    .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.4; z-index: 0; }
+    .hero-c { position: relative; z-index: 1; padding: 0 20px; max-width: 800px; }
+    h1 { font-size: clamp(28px, 6vw, 48px); margin: 0 0 15px; font-weight: 900; line-height: 1.1; }
+    .hero-p { font-size: 18px; margin-bottom: 25px; color: #ccc; }
+    .cta { background: var(--accent); color: #000; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: 800; display: inline-block; transition: 0.3s; box-shadow: 0 4px 15px rgba(255,204,0,0.3); }
+    .cta:hover { transform: scale(1.05); }
+
+    /* 滚动展示 */
+    .track-w { background: #050505; padding: 35px 0; overflow: hidden; border-bottom: 1px solid var(--border); }
+    .track { display: flex; width: max-content; animation: scroll 45s linear infinite; gap: 15px; }
+    @keyframes scroll { to { transform: translateX(-50%); } }
+    .track img { width: 240px; aspect-ratio: 3/4; object-fit: cover; border-radius: 12px; border: 1px solid var(--border); }
+
+    /* 版块通用 */
+    .sec-t { font-size: 28px; margin: 60px 0 30px; border-left: 6px solid var(--accent); padding-left: 18px; font-weight: 800; }
+    
+    /* 价格与区域对比 */
+    .table-w { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); }
+    th, td { padding: 18px; border: 1px solid var(--border); text-align: left; }
+    th { color: var(--accent); background: #1a1a1a; font-weight: 700; }
+
+    /* 增强卡片布局 */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .card { background: var(--card); padding: 30px; border-radius: 15px; border: 1px solid var(--border); transition: 0.3s; }
+    .card:hover { border-color: var(--accent); }
+    .card h3 { color: var(--accent); margin-top: 0; font-size: 20px; margin-bottom: 12px; }
+    .card p { font-size: 15px; color: #bbb; margin: 0; }
+
+    /* 预约流程图 */
+    .step-grid { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
+    .step { background: #1a1a1a; padding: 15px 25px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; border-bottom: 3px solid var(--accent); }
+
+    /* FAQ 增强 */
+    .faq-item { background: var(--card); padding: 25px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 15px; }
+    .faq-item h4 { margin: 0 0 10px; color: var(--accent); font-size: 18px; }
+    .faq-item p { margin: 0; color: #ccc; font-size: 15px; }
+
+    /* 关于与声明 */
+    .about-box { background: linear-gradient(145deg, #0a0a0a, #1a1a1a); padding: 40px; border-radius: 20px; border: 1px solid var(--border); margin: 60px 0; }
+    .disclaimer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #333; padding-top: 20px; }
+
+    footer { padding: 60px 0; text-align: center; color: #777; font-size: 14px; border-top: 1px solid var(--border); background: #050505; }
+    .social-btn { color: var(--accent); text-decoration: none; font-weight: bold; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-flex">
+    <div class="logo"><img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN588" width="120" height="32"></div>
+    <a href="https://en.mn588.com/" class="lang-btn">English</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear%20(2).png" class="hero-img" alt="新山下水导航" fetchpriority="high">
+  <div class="hero-c">
+    <h1>2026 新山下水·按摩·伴游预约平台</h1>
+    <p class="hero-p">汇聚 KSL、富力公主湾、金海湾最新资源。专业避雷，价格透明，为新加坡游客打造的私密指南。</p>
+    <a href="https://t.me/JBjinhaiwan" class="cta">立即获取今日实时名单 (Telegram)</a>
+  </div>
+</section>
+
+<section class="track-w">
+  <div class="track">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="Showcase" width="240" height="320" loading="lazy">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="Showcase" width="240" height="320" loading="lazy">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/8a2a5087-b3cd-426a-cc8e-0a9f8b807100/public" alt="Showcase" width="240" height="320" loading="lazy">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a2a2640f-e7cf-478c-0bfa-4ad57a944500/public" alt="Showcase" width="240" height="320" loading="lazy">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="Showcase" width="240" height="320" loading="lazy">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="Showcase" width="240" height="320" loading="lazy">
+  </div>
+</section>
+
+<div class="container">
+  <h2 class="sec-t">2026 新山各商圈行情深度解析</h2>
+  <div class="table-w">
+    <table>
+      <thead>
+        <tr><th>核心商圈</th><th>服务类别</th><th>价格参考 (MYR)</th><th>商圈特色</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>KSL / CIQ 区域</strong></td><td>专业按摩/水疗</td><td>120 - 250</td><td>交通最便利，老牌场子多，适合新手。</td></tr>
+        <tr><td><strong>富力公主湾 (R&F)</strong></td><td>精品伴游/陪游</td><td>500 - 900+</td><td>环境高端，多为高素质自由身，安全性极高。</td></tr>
+        <tr><td><strong>金海湾 / 百万镇</strong></td><td>小姐/自由身</td><td>350 - 750</td><td>性价比之选，资源丰富，更新速度最快。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="sec-t">三步完成极速预约</h2>
+  <div class="step-grid">
+    <div class="step"><strong>1. 选择频道</strong><br>加入 Telegram 获取实时名单</div>
+    <div class="step"><strong>2. 确认档期</strong><br>联系在线客服确认位置与时间</div>
+    <div class="step"><strong>3. 到场体验</strong><br>按照指引抵达，见人后付款</div>
+  </div>
+
+  <h2 class="sec-t">为什么 MN588 是您的新山首选</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🛡️ 拒绝预付陷阱</h3>
+      <p>所有推荐资源均经过老司机社区实测，严格执行“见人付款”原则，从根源杜绝定金诈骗。</p>
+    </div>
+    <div class="card">
+      <h3>📍 10分钟生活圈</h3>
+      <p>我们筛选的地点均在 CIQ 关卡 10-15 分钟 Grab 车程内，确保新加坡游客当天往返无压力。</p>
+    </div>
+    <div class="card">
+      <h3>⚡ 24H 实时更新</h3>
+      <p>不同于过时的论坛贴，我们的 Telegram 频道每小时同步小姐档期与行程，保证不落空。</p>
+    </div>
+  </div>
+
+  <h2 class="sec-t">常见疑难解答 (FAQ)</h2>
+  <div class="faq-item">
+    <h4>Q: 第一次去新山下水，有哪些“坑”需要避开？</h4>
+    <p>A: 第一不要相信任何低价诱惑（如RM100包夜）；第二坚决不给任何“订金”或“诚意金”；第三建议选择 Grab 叫车，定位准确且安全。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q: 预约自由身需要提前多久？</h4>
+    <p>A: 热门资源通常建议提前 2-3 小时咨询，临时去可能会遇到排队或档期已满的情况。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q: 如果照片和真人严重不符怎么办？</h4>
+    <p>A: 在 MN588 推荐的频道中，如果您发现货不对板，有权拒绝并联系客服投诉。我们致力于维护真实的评价生态。</p>
+  </div>
+
+  <div class="about-box">
+    <h2 style="margin-top:0; color:var(--accent);">关于 MN588 导航</h2>
+    <p>MN588 诞生于新山本地玩家社群，我们深知新加坡游客在寻找本地娱乐时的各种信息不透明与顾虑。通过整合本地最可靠的按摩、伴游与小姐资源，我们提供一站式的“情报站”服务。我们的目标是打造新山最干净、最真实、最及时的后花园导航。</p>
+    <div class="disclaimer">
+      <strong>免责声明：</strong> MN588 仅提供第三方行情信息展示与导航参考，不参与任何线下交易及服务过程。用户需自行甄别信息真伪并遵守马来西亚当地法律法规。
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>2026 MN588 新山信息导航 - 助您开启私密探索之旅</p>
+    <p style="margin:15px 0;">
+      <a href="https://t.me/JBmnXS" class="social-btn">Telegram 频道</a> | 
+      <a href="https://wa.me/60166846572" class="social-btn">WhatsApp 咨询</a>
+    </p>
+    <p>联系方式：+60 1668 46572 | 客服：@jbmn588</p>
+  </div>
+</footer>
+
+</body>
+</html>
