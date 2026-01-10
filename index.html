@@ -7,79 +7,320 @@
   <meta name="description" content="找新山按摩下水服务？MN588 汇总 2026 最新小姐与自由身行程，深度解析 KSL、金海湾、CIQ 关卡商圈行情。提供新加坡游客专属避雷指南与实时名单。">
   <link rel="icon" type="image/png" href="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png">
   <link rel="canonical" href="https://mn588.com/">
-  
-  <link rel="preload" as="image" href="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear%20(2).png" fetchpriority="high">
 
   <style>
-    :root { --accent: #ffcc00; --bg: #000; --text: #fff; --card: #121212; --border: #2a2a2a; }
-    body { font-family: system-ui,-apple-system,sans-serif; margin: 0; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; line-height: 1.6; }
-    .container { width: 92%; max-width: 1100px; margin: 0 auto; }
-    
+    :root {
+      --accent: #ffcc00;
+      --bg: #000;
+      --text: #fff;
+      --card: #121212;
+      --border: #2a2a2a;
+    }
+  
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+  
+    .container {
+      width: 92%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  
     /* Header */
-    header { height: 65px; display: flex; align-items: center; border-bottom: 1px solid var(--border); background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
-    .nav-flex { width: 100%; display: flex; justify-content: space-between; align-items: center; }
-    .logo img { height: 32px; width: auto; }
-    .lang-btn { font-size: 13px; border: 2px solid var(--accent); padding: 5px 16px; border-radius: 20px; color: var(--accent); text-decoration: none; font-weight: bold; }
-
+    header {
+      height: 65px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+  
+    .nav-flex {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo img {
+      height: 32px;
+      width: auto;
+    }
+  
+    .lang-btn {
+      font-size: 13px;
+      border: 2px solid var(--accent);
+      padding: 5px 16px;
+      border-radius: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
     /* Hero */
-    .hero { position: relative; height: 480px; display: flex; align-items: center; justify-content: center; text-align: center; background: #0a0a0a; overflow: hidden; }
-    .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.4; z-index: 0; }
-    .hero-c { position: relative; z-index: 1; padding: 0 20px; max-width: 800px; }
-    h1 { font-size: clamp(28px, 6vw, 48px); margin: 0 0 15px; font-weight: 900; line-height: 1.1; }
-    .hero-p { font-size: 18px; margin-bottom: 25px; color: #ccc; }
-    .cta { background: var(--accent); color: #000; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: 800; display: inline-block; transition: 0.3s; box-shadow: 0 4px 15px rgba(255,204,0,0.3); }
-    .cta:hover { transform: scale(1.05); }
-
-    /* 滚动展示 */
-    .track-w { background: #050505; padding: 35px 0; overflow: hidden; border-bottom: 1px solid var(--border); }
-    .track { display: flex; width: max-content; animation: scroll 45s linear infinite; gap: 15px; }
-    @keyframes scroll { to { transform: translateX(-50%); } }
-    .track img { width: 240px; aspect-ratio: 3/4; object-fit: cover; border-radius: 12px; border: 1px solid var(--border); }
-
-    /* 版块通用 */
-    .sec-t { font-size: 28px; margin: 60px 0 30px; border-left: 6px solid var(--accent); padding-left: 18px; font-weight: 800; }
-    
-    /* 价格与区域对比 */
-    .table-w { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 20px; }
-    table { width: 100%; border-collapse: collapse; background: var(--card); }
-    th, td { padding: 18px; border: 1px solid var(--border); text-align: left; }
-    th { color: var(--accent); background: #1a1a1a; font-weight: 700; }
-
-    /* 增强卡片布局 */
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-    .card { background: var(--card); padding: 30px; border-radius: 15px; border: 1px solid var(--border); transition: 0.3s; }
-    .card:hover { border-color: var(--accent); }
-    .card h3 { color: var(--accent); margin-top: 0; font-size: 20px; margin-bottom: 12px; }
-    .card p { font-size: 15px; color: #bbb; margin: 0; }
-
-    /* 预约流程图 */
-    .step-grid { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
-    .step { background: #1a1a1a; padding: 15px 25px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; border-bottom: 3px solid var(--accent); }
-
-    /* FAQ 增强 */
-    .faq-item { background: var(--card); padding: 25px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 15px; }
-    .faq-item h4 { margin: 0 0 10px; color: var(--accent); font-size: 18px; }
-    .faq-item p { margin: 0; color: #ccc; font-size: 15px; }
-
-    /* 关于与声明 */
-    .about-box { background: linear-gradient(145deg, #0a0a0a, #1a1a1a); padding: 40px; border-radius: 20px; border: 1px solid var(--border); margin: 60px 0; }
-    .disclaimer { font-size: 12px; color: #666; margin-top: 20px; border-top: 1px solid #333; padding-top: 20px; }
-
-    footer { padding: 60px 0; text-align: center; color: #777; font-size: 14px; border-top: 1px solid var(--border); background: #050505; }
-    .social-btn { color: var(--accent); text-decoration: none; font-weight: bold; margin: 0 10px; }
+    .hero {
+      position: relative;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #0a0a0a;
+      overflow: hidden;
+    }
+  
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.4;
+      z-index: 0;
+    }
+  
+    .hero-c {
+      position: relative;
+      z-index: 1;
+      padding: 0 20px;
+      max-width: 800px;
+    }
+  
+    h1 {
+      font-size: clamp(28px, 6vw, 48px);
+      margin: 0 0 15px;
+      font-weight: 900;
+      line-height: 1.1;
+    }
+  
+    .hero-p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #ccc;
+    }
+  
+    .cta {
+      background: var(--accent);
+      color: #000;
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 800;
+      display: inline-block;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(255,204,0,0.3);
+    }
+  
+    .cta:hover {
+      transform: scale(1.05);
+    }
+  
+    /* =======================
+       无缝无限走马灯（核心）
+       ======================= */
+  
+    .track-w {
+      background: #050505;
+      padding: 35px 0;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+  
+    .track {
+      display: flex;
+      width: max-content;
+      will-change: transform;
+      animation: marquee 40s linear infinite;
+    }
+  
+    .track img {
+      width: 240px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      flex: 0 0 auto;
+      margin-right: 15px; /* ✅ 关键：不要用 gap */
+    }
+  
+    @keyframes marquee {
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(-50%, 0, 0); }
+    }
+  
+    .track:hover {
+      animation-play-state: paused;
+    }
+  
+    /* ======================= */
+  
+    .sec-t {
+      font-size: 28px;
+      margin: 60px 0 30px;
+      border-left: 6px solid var(--accent);
+      padding-left: 18px;
+      font-weight: 800;
+    }
+  
+    .table-w {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+    }
+  
+    th, td {
+      padding: 18px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+  
+    th {
+      color: var(--accent);
+      background: #1a1a1a;
+      font-weight: 700;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+  
+    .card {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+      transition: 0.3s;
+    }
+  
+    .card:hover {
+      border-color: var(--accent);
+    }
+  
+    .card h3 {
+      color: var(--accent);
+      margin-top: 0;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+  
+    .card p {
+      font-size: 15px;
+      color: #bbb;
+      margin: 0;
+    }
+  
+    .step-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .step {
+      background: #1a1a1a;
+      padding: 15px 25px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      border-bottom: 3px solid var(--accent);
+    }
+  
+    .faq-item {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 15px;
+    }
+  
+    .faq-item h4 {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 18px;
+    }
+  
+    .faq-item p {
+      margin: 0;
+      color: #ccc;
+      font-size: 15px;
+    }
+  
+    .about-box {
+      background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      margin: 60px 0;
+    }
+  
+    .disclaimer {
+      font-size: 12px;
+      color: #666;
+      margin-top: 20px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+  
+    footer {
+      padding: 60px 0;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      background: #050505;
+    }
+  
+    .social-btn {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
   </style>
+  
 </head>
 <body>
 
 <header>
   <div class="container nav-flex">
-    <div class="logo"><img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN588" width="120" height="32"></div>
+    <div class="logo">
+      <img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/logo/512logo.png" alt="MN588" width="120" height="32">
+    </div>
     <a href="https://en.mn588.com/" class="lang-btn">English</a>
   </div>
 </header>
 
 <section class="hero">
-  <img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear%20(2).png" class="hero-img" alt="新山下水导航" fetchpriority="high">
+  <!-- ✅ LCP 元素：单张 WebP -->
+  <img
+    src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear-1280.webp"
+    class="hero-img"
+    alt="新山下水导航"
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+  >
+
   <div class="hero-c">
     <h1>2026 新山下水·按摩·伴游预约平台</h1>
     <p class="hero-p">汇聚 KSL、富力公主湾、金海湾最新资源。专业避雷，价格透明，为新加坡游客打造的私密指南。</p>
@@ -89,14 +330,20 @@
 
 <section class="track-w">
   <div class="track">
-    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="Showcase" width="240" height="320" loading="lazy">
-    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="Showcase" width="240" height="320" loading="lazy">
-    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/8a2a5087-b3cd-426a-cc8e-0a9f8b807100/public" alt="Showcase" width="240" height="320" loading="lazy">
-    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a2a2640f-e7cf-478c-0bfa-4ad57a944500/public" alt="Showcase" width="240" height="320" loading="lazy">
-    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/a0090785-936d-433a-0c44-fa251ebedc00/public" alt="Showcase" width="240" height="320" loading="lazy">
-    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1872a7e1-6721-4437-f383-4c8c6a3f9c00/public" alt="Showcase" width="240" height="320" loading="lazy">
+    <!-- 第一组 -->
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async">
+
+    <!-- 第二组（完全复制，顺序一致） -->
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async" aria-hidden="true">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d0aef3c8-bd9f-4925-a789-f5eccb715000/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async" aria-hidden="true">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/fe2dbea4-e900-4f2c-71bf-85bd4fc94100/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async" aria-hidden="true">
+    <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/69197ec9-720b-4cf1-576c-01c175a40b00/sm" alt="Showcase" width="240" height="320" loading="lazy" decoding="async" aria-hidden="true">
   </div>
 </section>
+
 
 <div class="container">
   <h2 class="sec-t">2026 新山各商圈行情深度解析</h2>
