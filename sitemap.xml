@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://wishct.link/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://mn588.com/</loc>
+    <lastmod>2026-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/"/>
   </url>
 
-  <!-- 站内锚点（可选，但对大型单页有帮助） -->
   <url>
-    <loc>https://wishct.link/#links</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://en.mn588.com/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/"/>
   </url>
-  <url>
-    <loc>https://wishct.link/#modules</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#services</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#faq</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+
 </urlset>
