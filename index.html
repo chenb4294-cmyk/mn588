@@ -1,143 +1,232 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>愿望城市入口（WishCT.io 最新备用地址）| 2026 新山下水、自由身实测导航</title>
-    <meta name="description" content="wishct.io 打不开？找愿望城市最新入口？本站提供 2026 官方推荐的 WishCT 备用镜像，实时同步新山自由身、新山下水、华人论坛资讯。适配新加坡及马来西亚网络，解决域名失效问题。">
-    <meta name="keywords" content="wishct.io,愿望城市,wishct入口,新山愿望城市,华人论坛,新山自由身,新山下水,新山按摩">
-    <link rel="canonical" href="https://wishct.link/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="preconnect" href="https://imagedelivery.net" crossorigin>
+  
+  <title>Wish Wellness JB | 新山专业男士理疗舒压中心</title>
+  <meta name="description" content="新山（Johor Bahru）Wish Wellness 专为男士设计的专业理疗空间。提供肩颈放松、精油舒压及深度肌肉理疗，环境安静透明，全程预约制。">
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    :root {
+      --primary: #1a2a3a;
+      --accent: #c5a059; 
+      --whatsapp: #25D366;
+      --text-main: #333;
+      --text-sub: #666;
+      --border: #eeeeee;
+      --max-width: 1000px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text-main);
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; transition: 0.3s; }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+    /* 浮动 WhatsApp 按钮 */
+    .floating-ws {
+      position: fixed;
+      right: 20px;
+      bottom: 30px;
+      background: var(--whatsapp);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo-main { font-size: 22px; font-weight: 700; color: var(--primary); letter-spacing: 1px; }
+
+    /* Hero Section */
+    #hero {
+      padding: 120px 0;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/888hao.png") center/cover;
+      color: #fff;
+      text-align: center;
+    }
+    .hero-title { font-size: 32px; margin-bottom: 20px; font-weight: 600; }
+    .hero-desc { font-size: 18px; max-width: 700px; margin: 0 auto 35px; opacity: 0.9; }
     
-    <style>
-        :root {
-            --bg: #050915; --surface: #0d1428; --panel: #131c35; --text: #e9edf7;
-            --muted: rgba(233, 237, 247, .7); --primary: #4dc7ff; --accent: #7ad8a8;
-            --radius: 16px; --max: 1180px;
-        }
-        * { box-sizing: border-box }
-        body { margin: 0; background: radial-gradient(circle at 20% 20%, rgba(77, 199, 255, .08), transparent 42%), var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased }
-        a { text-decoration: none; color: inherit }
-        main { max-width: var(--max); margin: 0 auto; padding: 0 16px 40px }
+    .btn-ws {
+      display: inline-block;
+      background: var(--whatsapp);
+      color: white;
+      padding: 14px 40px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-        /* Hero Section */
-        .hero { position: relative; overflow: hidden; width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); padding: 80px 32px; min-height: 80vh; text-align: center; }
-        .hero-bg { position: absolute; inset: 0; z-index: 0; }
-        .hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4); }
-        .hero-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; }
-        
-        /* 状态监测模块：截流利器 */
-        .status-bar { 
-            background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); border: 1px solid var(--primary);
-            padding: 15px 30px; border-radius: 50px; display: flex; gap: 40px; margin-bottom: 20px;
-        }
-        .status-item { font-size: 14px; font-weight: 700; }
-        .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+    /* Services */
+    section { padding: 80px 0; }
+    .section-title { text-align: center; font-size: 28px; margin-bottom: 50px; position: relative; padding-bottom: 15px; }
+    .section-title::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 3px; background: var(--accent); }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .service-card img { height: 280px; width: 100%; object-fit: cover; }
+    .service-info { padding: 25px; }
+    .service-info h3 { margin-bottom: 12px; color: var(--primary); font-size: 20px; }
+    .service-info p { color: var(--text-sub); font-size: 15px; }
 
-        .hero-logo img { width: 200px; background: #fff; padding: 10px; border-radius: 15px; box-shadow: 0 0 30px rgba(77, 199, 255, 0.4); }
-        h1 { font-size: clamp(24px, 5vw, 42px); color: var(--text); margin: 15px 0; }
-        .lead { max-width: 800px; color: var(--muted); line-height: 1.8; font-size: 16px; margin-bottom: 30px; }
-        
-        .btn { padding: 14px 30px; border-radius: 50px; font-weight: 800; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px; }
-        .btn.primary { background: var(--primary); color: #000; box-shadow: 0 10px 25px rgba(77, 199, 255, 0.4); }
-        .btn.secondary { border: 1px solid var(--text); background: rgba(255,255,255,0.1); }
+    /* Footer & Privacy Modal */
+    footer {
+      background: #111;
+      color: #999;
+      padding: 50px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-links { margin-bottom: 20px; }
+    .footer-links a { color: #ccc; margin: 0 15px; cursor: pointer; }
 
-        /* Content Sections */
-        .section { margin-top: 50px; }
-        .section h2 { text-align: center; font-size: 28px; margin-bottom: 30px; color: var(--primary); }
-        .list-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .list-card { background: var(--surface); border: 1px solid var(--border); padding: 25px; border-radius: 20px; position: relative; overflow: hidden; }
-        .list-card::after { content: "2026 Updated"; position: absolute; top: 10px; right: -25px; background: var(--accent); color: #000; font-size: 10px; padding: 3px 30px; transform: rotate(45deg); font-weight: 900; }
-        
-        /* 深度文案区 */
-        .rich-text { background: var(--panel); padding: 35px; border-radius: 25px; border: 1px solid var(--border); line-height: 1.9; }
-        .rich-text h3 { color: var(--primary); }
-        .rich-text p { margin-bottom: 15px; color: var(--muted); }
+    #privacy-modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0; top: 0; width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      max-height: 70vh;
+      overflow-y: auto;
+      text-align: left;
+      color: #333;
+    }
 
-        .faq-item { background: var(--surface); margin-bottom: 10px; border-radius: 12px; overflow: hidden; }
-        .faq-question { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; font-weight: 700; background: rgba(255,255,255,0.03); }
-        .faq-answer { padding: 0 18px 18px; display: none; color: var(--muted); font-size: 14px; }
-    </style>
+    @media (max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 26px; }
+    }
+  </style>
 </head>
-
 <body>
-    <main>
-        <section class="hero">
-            <div class="hero-bg"><img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/%E6%84%BF%E6%9C%9B%E5%9F%8E%E5%B8%82/mn6688.png"></div>
-            <div class="hero-content">
-                <div class="status-bar">
-                    <div class="status-item"><span class="dot" style="background: #22c55e;"></span> WishCT.link 实时状态：<span style="color: #22c55e;">在线 (稳定)</span></div>
-                    <div class="status-item" style="opacity: 0.7;"><span class="dot" style="background: #ff4d4d;"></span> wishct.io 状态：<span style="color: #ff4d4d;">失效 (需跳转)</span></div>
-                </div>
 
-                <div class="hero-logo"><img src="WISHTCTLOGO.png" alt="WishCT 官方导航"></div>
-                <h1>愿望城市（WishCT）2026 最新官方入口</h1>
-                <p class="lead">原 wishct.io 域名受运营商封锁已失效。本站作为愿望城市官方授权的同步页，实时汇总新山愿望城市、华人论坛、新山自由身实测等最新线路。针对新加坡及马来西亚网络环境优化，确保您的帐号数据毫秒级同步，拒绝假站钓鱼。</p>
-                
-                <div class="actions">
-                    <a class="btn primary" href="https://mn521.com/">进入愿望城市主站 (2026 推荐)</a>
-                    <a class="btn secondary" href="https://t.me/JBjinhaiwan">Telegram 域名状态通知</a>
-                </div>
-            </div>
-        </section>
+  <a href="https://wa.me/60166846572" class="floating-ws" target="_blank" rel="nofollow">
+    <svg style="width:35px;height:35px" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.5 2 2 6.5 2 12.04C2 13.81 2.46 15.54 3.34 17.06L2 22L7.13 20.69C8.59 21.54 10.3 22 12.04 22C17.5 22 22 17.5 22 12.04C22 9.4 20.97 6.93 19.11 5.07C17.25 3.21 14.78 2.18 12.04 2M12.04 20.11C10.5 20.11 9 19.7 7.71 18.92L7.4 18.73L4.33 19.54L5.15 16.56L4.95 16.24C4.1 14.88 3.65 13.31 3.65 11.7C3.65 7.07 7.41 3.31 12.04 3.31C14.28 3.31 16.39 4.19 17.97 5.76C19.56 7.34 20.43 9.45 20.43 11.7C20.43 16.34 16.67 20.11 12.04 20.11M17.15 14.12C16.87 13.97 15.48 13.29 15.22 13.2C14.96 13.1 14.77 13.06 14.58 13.34C14.39 13.62 13.85 14.26 13.68 14.45C13.52 14.64 13.35 14.67 13.07 14.53C12.8 14.39 11.91 14.1 10.85 13.15C10.03 12.42 9.47 11.51 9.31 11.23C9.15 10.95 9.29 10.8 9.43 10.66C9.56 10.53 9.72 10.31 9.86 10.15C10 9.97 10.04 9.85 10.13 9.67C10.22 9.48 10.18 9.33 10.11 9.19C10.04 9.05 9.48 7.66 9.24 7.1C9 6.5 8.76 6.59 8.58 6.59C8.4 6.59 8.21 6.59 8.03 6.59C7.84 6.59 7.53 6.66 7.28 6.94C7.03 7.22 6.33 7.92 6.33 9.34C6.33 10.76 7.36 12.13 7.5 12.31C7.65 12.5 9.53 15.39 12.41 16.63C13.09 16.92 13.63 17.11 14.04 17.24C14.72 17.46 15.34 17.43 15.82 17.36C16.37 17.28 17.5 16.67 17.74 16.03C17.96 15.39 17.96 14.83 17.89 14.72C17.82 14.61 17.63 14.54 17.35 14.4" /></svg>
+  </a>
 
-        <section class="section">
-            <h2>官方验证·备用入口</h2>
-            <div class="list-cards">
-                <div class="list-card">
-                    <strong>主线路 (WishCT Global)</strong>
-                    <p style="font-size: 13px; color: var(--muted); margin: 10px 0;">https://mn521.com/</p>
-                    <small>最高优先级，适配全马/全坡网络，含新山下水实测板块。</small>
-                </div>
-                <div class="list-card">
-                    <strong>备用镜像 (WishCT Mirror)</strong>
-                    <p style="font-size: 13px; color: var(--muted); margin: 10px 0;">https://wishct.link/</p>
-                    <small>针对 wishct.io 失效开发的应急线路，同步华人论坛所有数据。</small>
-                </div>
-                <div class="list-card">
-                    <strong>人工协助与核验</strong>
-                    <p style="font-size: 13px; color: var(--muted); margin: 10px 0;">WhatsApp: +60 11-6448 3576</p>
-                    <small>遇到假站、钓鱼站或帐号登录异常，请即刻联系人工处理。</small>
-                </div>
-            </div>
-        </section>
+  <header>
+    <div class="container nav">
+      <div class="logo-main">WISH WELLNESS JB</div>
+      <a href="https://wa.me/60166846572" target="_blank" style="color:var(--whatsapp); font-weight:bold;">点此咨询 WhatsApp</a>
+    </div>
+  </header>
 
-        <section class="section">
-            <h2>2026 新山选场与避坑深度指南</h2>
-            <div class="rich-text">
-                <h3>为什么不能再访问过时的旧域名？</h3>
-                <p>许多用户仍在搜索 **wishct.io**，但该域名目前已被劫持或停止更新。通过旧链接进入可能导致您的论坛帐号泄露。本站提供的 `wishct.link` 系列入口由新山愿望城市团队维护，保障访问安全。</p>
-                
-                <h3>新山热门板块行情速递</h3>
-                <p>根据愿望城市 2026 最新回馈：<br>
-                1. **KSL/CIQ 商圈**：自由身资源更新最快，适合新加坡往返玩家；<br>
-                2. **富力公主湾 (R&F)**：高端伴游集中地，隐私性极佳，建议通过本站进入查看实拍视频；<br>
-                3. **金海湾 (Danga Bay)**：性价比之选，近期有大量新下水资源上线。</p>
-            </div>
-        </section>
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h1 class="hero-title">新山男士专享理疗舒压</h1>
+        <p class="hero-desc">在繁忙的新山，为您提供一处安静、整洁、专业的深度放松空间。采用专业手法，告别身体疲惫。</p>
+        <a href="https://wa.me/60166846572" class="btn-ws" target="_blank">立即 WhatsApp 预约</a>
+      </div>
+    </section>
 
-        <section class="section" id="faq">
-            <h2>用户常见疑难汇总</h2>
-            <div class="faq-item">
-                <div class="faq-question">wishct.io 为什么显示“连接已重置”？ <span>+</span></div>
-                <div class="faq-answer">这是典型的域名遭墙/屏蔽现象。请停止刷新旧域名，直接使用本页提供的 `mn521.com` 或 `wishct.link` 备用地址，无需梯子即可秒开。</div>
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">专业服务项目</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/fb4f8143-3962-4877-5fc7-e5b1f99ffe00/public" alt="深层理疗">
+            <div class="service-info">
+              <h3>深层肌肉理疗</h3>
+              <p>针对长期久坐、开车导致的肩膀僵硬与腰背疲劳，进行深层按压与疏通。</p>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">如何确认我进入的是真实的愿望城市？ <span>+</span></div>
-                <div class="faq-answer">真实的入口会实时显示 Telegram @jbmnziyous 的公告内容，且不会要求您在登录前先支付任何押金。本导航页所有入口均经过官方 24 小时实测监控。</div>
+          </div>
+          <div class="service-card">
+            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/0ab19db0-0138-44cc-5906-482a64d3bb00/public" alt="精油舒压">
+            <div class="service-info">
+              <h3>芳香精油舒压</h3>
+              <p>温和的精油推拿，旨在舒缓紧张神经，改善睡眠质量，达到身心平衡。</p>
             </div>
-        </section>
-    </main>
+          </div>
+          <div class="service-card">
+            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/45db5d60-3ab1-444d-e08b-7dcec3a8b900/public" alt="专业调理">
+            <div class="service-info">
+              <h3>定制化调理</h3>
+              <p>经验理疗师根据您的身体受力程度，灵活调整力度，确保舒适高效。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const answer = q.nextElementSibling;
-                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-                q.querySelector('span').innerText = answer.style.display === 'block' ? '-' : '+';
-            });
-        });
-    </script>
+    <section id="about" style="background:#f4f6f8; text-align:center;">
+      <div class="container">
+        <h2 class="section-title">为什么选择我们</h2>
+        <p style="color:#666; max-width:800px; margin: 0 auto 40px;">我们坚持正规经营，专注男士健康。独立包厢确保隐私，每客必换洗，严格把控卫生标准。</p>
+        <p><strong>营业时间：</strong> 14:00 - 02:00 (预约制)</p>
+        <p><strong>坐标：</strong> Johor Bahru (靠近核心商业区)</p>
+        <br><br>
+        <a href="https://wa.me/60166846572" class="btn-ws" target="_blank">获取详细地址定位</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a onclick="document.getElementById('privacy-modal').style.display='block'">隐私政策 (Privacy Policy)</a>
+      </div>
+      <p>© 2025 Wish Wellness & Spa JB. 保留所有权利。</p>
+      <p style="margin-top:10px; font-size:11px; opacity:0.6;">本站仅提供正规男士理疗咨询，严格遵守马来西亚相关法律法规。</p>
+    </div>
+  </footer>
+
+  <div id="privacy-modal">
+    <div class="modal-content">
+      <h3 style="margin-bottom:15px;">隐私政策 Privacy Policy</h3>
+      <p style="font-size:13px; line-height:1.8;">
+        欢迎访问 Wish Wellness JB。我们非常重视您的隐私。本政策旨在说明我们如何处理信息：<br><br>
+        1. <strong>信息收集</strong>：本站不主动收集您的个人身份信息，仅在您点击 WhatsApp 咨询时，由第三方平台进行通讯引导。<br>
+        2. <strong>信息使用</strong>：您通过 WhatsApp 提供的信息仅用于预约服务和到店指引，我们承诺不会向任何第三方泄露您的联系方式。<br>
+        3. <strong>Cookies</strong>：Google Ads 可能会使用 Cookies 来评估广告投放效果，这不会识别您的个人身份。<br>
+        4. <strong>外部链接</strong>：本站包含指向 WhatsApp 的链接，请参考其平台的隐私协议。<br><br>
+        如有任何疑问，请随时联系我们的在线客服。
+      </p>
+      <button onclick="document.getElementById('privacy-modal').style.display='none'" style="margin-top:20px; padding:8px 20px; cursor:pointer;">关闭窗口</button>
+    </div>
+  </div>
+
 </body>
 </html>
