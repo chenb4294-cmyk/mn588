@@ -2,142 +2,143 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>愿望城市入口（WishCT.io 最新备用地址）| 2026 新山下水、自由身实测导航</title>
-    <meta name="description" content="wishct.io 打不开？找愿望城市最新入口？本站提供 2026 官方推荐的 WishCT 备用镜像，实时同步新山自由身、新山下水、华人论坛资讯。适配新加坡及马来西亚网络，解决域名失效问题。">
-    <meta name="keywords" content="wishct.io,愿望城市,wishct入口,新山愿望城市,华人论坛,新山自由身,新山下水,新山按摩">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>愿望城市(WishCT)唯一官方发布页 - 2026 新山下水_按摩_伴游_自由身资源总站</title>
+    
+    <meta name="description" content="WishCT.io 打不开？认准愿望城市官方最新入口。全网最全的Johor Bahru新山下水资源、自由身微信号、修车报告、按摩技师实测。每日更新 KSL/富力公主湾/金海湾 最新“新茶”资讯。拒绝假站，安全回家。">
+    <meta name="keywords" content="wishct,愿望城市,wishct.io,新山下水,新山按摩,新山伴游,JB hooker,新山自由身,柔佛新山修车,JB资源">
     <link rel="canonical" href="https://wishct.link/">
+    <meta name="robots" content="index, follow">
     
     <style>
         :root {
-            --bg: #050915; --surface: #0d1428; --panel: #131c35; --text: #e9edf7;
-            --muted: rgba(233, 237, 247, .7); --primary: #4dc7ff; --accent: #7ad8a8;
-            --radius: 16px; --max: 1180px;
+            /* 采用黑金配色，提升“官方”和“高端”感 */
+            --bg: #000000;
+            --surface: #111111;
+            --border: #333333;
+            --gold: #FFD700;
+            --gold-glow: rgba(255, 215, 0, 0.3);
+            --text-main: #ffffff;
+            --text-sub: #aaaaaa;
+            --accent: #ff0050; /* 醒目的红色用于警告或强调 */
         }
-        * { box-sizing: border-box }
-        body { margin: 0; background: radial-gradient(circle at 20% 20%, rgba(77, 199, 255, .08), transparent 42%), var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased }
-        a { text-decoration: none; color: inherit }
-        main { max-width: var(--max); margin: 0 auto; padding: 0 16px 40px }
-
-        /* Hero Section */
-        .hero { position: relative; overflow: hidden; width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); padding: 80px 32px; min-height: 80vh; text-align: center; }
-        .hero-bg { position: absolute; inset: 0; z-index: 0; }
-        .hero-bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4); }
-        .hero-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; }
         
-        /* 状态监测模块：截流利器 */
-        .status-bar { 
-            background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); border: 1px solid var(--primary);
-            padding: 15px 30px; border-radius: 50px; display: flex; gap: 40px; margin-bottom: 20px;
+        * { box-sizing: border-box; margin: 0; padding: 0; outline: none; -webkit-tap-highlight-color: transparent; }
+        body { background-color: var(--bg); background-image: radial-gradient(circle at 50% 0%, #1a1a00, #000000 60%); color: var(--text-main); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; min-height: 100vh; }
+        
+        main { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 顶部 LOGO 区 */
+        .header { text-align: center; margin-top: 30px; margin-bottom: 20px; }
+        .logo-text { font-size: 28px; font-weight: 900; letter-spacing: -1px; background: linear-gradient(to bottom, #fff, #999); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .sub-logo { color: var(--gold); font-size: 14px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; margin-top: 5px; text-shadow: 0 0 10px var(--gold-glow); }
+
+        /* 公告栏：模拟论坛置顶帖的感觉 */
+        .notice-box { background: rgba(255, 215, 0, 0.1); border: 1px solid var(--gold); border-radius: 8px; padding: 15px; margin-bottom: 30px; font-size: 14px; color: #fff; text-align: left; }
+        .notice-title { color: var(--gold); font-weight: bold; margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
+        .notice-blink { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; display: inline-block; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* 核心按钮区 */
+        .action-area { display: flex; flex-direction: column; gap: 15px; }
+        
+        .btn { display: block; width: 100%; padding: 18px; border-radius: 50px; text-align: center; text-decoration: none; font-weight: 700; font-size: 18px; position: relative; transition: all 0.2s; }
+        
+        /* 主按钮：黑金流光特效 */
+        .btn-main { 
+            background: linear-gradient(45deg, #b8860b, #ffd700, #b8860b); 
+            background-size: 200% 200%;
+            color: #000; 
+            box-shadow: 0 0 20px var(--gold-glow);
+            animation: gradientMove 3s ease infinite;
+            border: none;
         }
-        .status-item { font-size: 14px; font-weight: 700; }
-        .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
-
-        .hero-logo img { width: 200px; background: #fff; padding: 10px; border-radius: 15px; box-shadow: 0 0 30px rgba(77, 199, 255, 0.4); }
-        h1 { font-size: clamp(24px, 5vw, 42px); color: var(--text); margin: 15px 0; }
-        .lead { max-width: 800px; color: var(--muted); line-height: 1.8; font-size: 16px; margin-bottom: 30px; }
+        .btn-main strong { display: block; font-size: 20px; }
+        .btn-main span { font-size: 12px; font-weight: normal; opacity: 0.9; }
         
-        .btn { padding: 14px 30px; border-radius: 50px; font-weight: 800; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px; }
-        .btn.primary { background: var(--primary); color: #000; box-shadow: 0 10px 25px rgba(77, 199, 255, 0.4); }
-        .btn.secondary { border: 1px solid var(--text); background: rgba(255,255,255,0.1); }
+        @keyframes gradientMove { 0% { background-position: 0% 50% } 50% { background-position: 100% 50% } 100% { background-position: 0% 50% } }
 
-        /* Content Sections */
-        .section { margin-top: 50px; }
-        .section h2 { text-align: center; font-size: 28px; margin-bottom: 30px; color: var(--primary); }
-        .list-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .list-card { background: var(--surface); border: 1px solid var(--border); padding: 25px; border-radius: 20px; position: relative; overflow: hidden; }
-        .list-card::after { content: "2026 Updated"; position: absolute; top: 10px; right: -25px; background: var(--accent); color: #000; font-size: 10px; padding: 3px 30px; transform: rotate(45deg); font-weight: 900; }
+        .btn-sub { background: #222; border: 1px solid #444; color: #fff; font-size: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-sub:active { background: #333; }
+
+        /* 状态监测：建立紧迫感 */
+        .status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 30px; }
+        .status-item { background: var(--surface); border: 1px solid var(--border); padding: 15px; border-radius: 8px; text-align: center; }
+        .status-label { font-size: 12px; color: #888; display: block; margin-bottom: 5px; }
+        .status-val { font-size: 14px; font-weight: bold; }
+        .st-bad { color: #ff4444; text-decoration: line-through; }
+        .st-good { color: #00ff88; }
+
+        /* 假装是搜索结果/热门标签，堆砌 SEO 关键词 */
+        .hot-tags { margin-top: 40px; text-align: center; }
+        .tag-title { font-size: 14px; color: #666; margin-bottom: 15px; position: relative; display: inline-block; }
+        .tag-title::before, .tag-title::after { content: ""; position: absolute; top: 50%; width: 30px; height: 1px; background: #333; }
+        .tag-title::before { left: -40px; }
+        .tag-title::after { right: -40px; }
         
-        /* 深度文案区 */
-        .rich-text { background: var(--panel); padding: 35px; border-radius: 25px; border: 1px solid var(--border); line-height: 1.9; }
-        .rich-text h3 { color: var(--primary); }
-        .rich-text p { margin-bottom: 15px; color: var(--muted); }
-
-        .faq-item { background: var(--surface); margin-bottom: 10px; border-radius: 12px; overflow: hidden; }
-        .faq-question { padding: 18px; cursor: pointer; display: flex; justify-content: space-between; font-weight: 700; background: rgba(255,255,255,0.03); }
-        .faq-answer { padding: 0 18px 18px; display: none; color: var(--muted); font-size: 14px; }
+        .tags-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        .tag { background: #1a1a1a; color: #888; padding: 5px 12px; border-radius: 4px; font-size: 12px; text-decoration: none; border: 1px solid #333; }
+        
+        /* 底部 */
+        .footer { margin-top: 50px; border-top: 1px solid #222; padding-top: 20px; text-align: center; color: #444; font-size: 12px; }
     </style>
 </head>
-
 <body>
+
     <main>
-        <section class="hero">
-            <div class="hero-bg"><img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/%E6%84%BF%E6%9C%9B%E5%9F%8E%E5%B8%82/mn6688.png"></div>
-            <div class="hero-content">
-                <div class="status-bar">
-                    <div class="status-item"><span class="dot" style="background: #22c55e;"></span> WishCT.link 实时状态：<span style="color: #22c55e;">在线 (稳定)</span></div>
-                    <div class="status-item" style="opacity: 0.7;"><span class="dot" style="background: #ff4d4d;"></span> wishct.io 状态：<span style="color: #ff4d4d;">失效 (需跳转)</span></div>
-                </div>
+        <header class="header">
+            <div class="logo-text">愿望城市 WishCT</div>
+            <div class="sub-logo">OFFICIAL PORTAL 2026</div>
+        </header>
 
-                <div class="hero-logo"><img src="WISHTCTLOGO.png" alt="WishCT 官方导航"></div>
-                <h1>愿望城市（WishCT）2026 最新官方入口</h1>
-                <p class="lead">原 wishct.io 域名受运营商封锁已失效。本站作为愿望城市官方授权的同步页，实时汇总新山愿望城市、华人论坛、新山自由身实测等最新线路。针对新加坡及马来西亚网络环境优化，确保您的帐号数据毫秒级同步，拒绝假站钓鱼。</p>
-                
-                <div class="actions">
-                    <a class="btn primary" href="https://mn521.com/">进入愿望城市主站 (2026 推荐)</a>
-                    <a class="btn secondary" href="https://t.me/JBjinhaiwan">Telegram 域名状态通知</a>
-                </div>
-            </div>
-        </section>
+        <div class="notice-box">
+            <div class="notice-title"><span class="notice-blink"></span> 官方紧急公告</div>
+            <p style="line-height: 1.6;">原域名 <strong>wishct.io</strong> 已被DNS污染无法访问。请收藏本页面（wishct.link），防止迷路。</p>
+            <p style="margin-top: 10px; color: #ff6b6b; font-size: 13px;">⚠️ 警惕：近期出现大量模仿“愿望城市”的钓鱼盘，请认准 mn521.com 唯一入口，切勿在非官方渠道支付任何定金！</p>
+        </div>
 
-        <section class="section">
-            <h2>官方验证·备用入口</h2>
-            <div class="list-cards">
-                <div class="list-card">
-                    <strong>主线路 (WishCT Global)</strong>
-                    <p style="font-size: 13px; color: var(--muted); margin: 10px 0;">https://mn521.com/</p>
-                    <small>最高优先级，适配全马/全坡网络，含新山下水实测板块。</small>
-                </div>
-                <div class="list-card">
-                    <strong>备用镜像 (WishCT Mirror)</strong>
-                    <p style="font-size: 13px; color: var(--muted); margin: 10px 0;">https://wishct.link/</p>
-                    <small>针对 wishct.io 失效开发的应急线路，同步华人论坛所有数据。</small>
-                </div>
-                <div class="list-card">
-                    <strong>人工协助与核验</strong>
-                    <p style="font-size: 13px; color: var(--muted); margin: 10px 0;">WhatsApp: +60 11-6448 3576</p>
-                    <small>遇到假站、钓鱼站或帐号登录异常，请即刻联系人工处理。</small>
-                </div>
-            </div>
-        </section>
+        <div class="action-area">
+            <a href="https://mn521.com/" class="btn btn-main">
+                <strong>👉 进入愿望城市主站</strong>
+                <span>点击查看今日新山下水/伴游资源</span>
+            </a>
+            
+            <a href="https://t.me/JBjinhaiwan" class="btn btn-sub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.863 1.13c-1.192.501-1.797.755-1.93.896-.134.142-.232.33-.232.545 0 .216.098.404.232.546.133.141.738.395 1.93.896 1.745.732 3.81 1.53 5.878 2.33l8.609 3.33c.31.12.652.193 1.022.215H21.2c1.23 0 2.227-.987 2.227-2.204V4.637c0-1.217-.997-2.204-2.227-2.204z"/></svg>
+                加入 Telegram 只有老司机的群
+            </a>
+        </div>
 
-        <section class="section">
-            <h2>2026 新山选场与避坑深度指南</h2>
-            <div class="rich-text">
-                <h3>为什么不能再访问过时的旧域名？</h3>
-                <p>许多用户仍在搜索 **wishct.io**，但该域名目前已被劫持或停止更新。通过旧链接进入可能导致您的论坛帐号泄露。本站提供的 `wishct.link` 系列入口由新山愿望城市团队维护，保障访问安全。</p>
-                
-                <h3>新山热门板块行情速递</h3>
-                <p>根据愿望城市 2026 最新回馈：<br>
-                1. **KSL/CIQ 商圈**：自由身资源更新最快，适合新加坡往返玩家；<br>
-                2. **富力公主湾 (R&F)**：高端伴游集中地，隐私性极佳，建议通过本站进入查看实拍视频；<br>
-                3. **金海湾 (Danga Bay)**：性价比之选，近期有大量新下水资源上线。</p>
+        <div class="status-grid">
+            <div class="status-item">
+                <span class="status-label">旧域名 (不可用)</span>
+                <div class="status-val st-bad">wishct.io</div>
             </div>
-        </section>
+            <div class="status-item">
+                <span class="status-label">当前官方备用</span>
+                <div class="status-val st-good">wishct.link</div>
+            </div>
+        </div>
 
-        <section class="section" id="faq">
-            <h2>用户常见疑难汇总</h2>
-            <div class="faq-item">
-                <div class="faq-question">wishct.io 为什么显示“连接已重置”？ <span>+</span></div>
-                <div class="faq-answer">这是典型的域名遭墙/屏蔽现象。请停止刷新旧域名，直接使用本页提供的 `mn521.com` 或 `wishct.link` 备用地址，无需梯子即可秒开。</div>
+        <div class="hot-tags">
+            <div class="tag-title">热门板块实时索引</div>
+            <div class="tags-container">
+                <span class="tag">🔥 新山下水实测</span>
+                <span class="tag">👠 JB自由身伴游</span>
+                <span class="tag">💆‍♀️ 越南/泰国技师</span>
+                <span class="tag">🏢 KSL/富力/金海湾</span>
+                <span class="tag">🛡️ 防骗黑名单</span>
+                <span class="tag">💬 华人老司机论坛</span>
+                <span class="tag">🚀 2026新茶</span>
+                <span class="tag">✅ 免定金验证</span>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">如何确认我进入的是真实的愿望城市？ <span>+</span></div>
-                <div class="faq-answer">真实的入口会实时显示 Telegram @jbmnziyous 的公告内容，且不会要求您在登录前先支付任何押金。本导航页所有入口均经过官方 24 小时实测监控。</div>
-            </div>
-        </section>
+        </div>
+
+        <footer class="footer">
+            <p>WishCT.io © 2026 愿望城市官方导航</p>
+            <p style="margin-top:5px; opacity: 0.5;">永久回家地址：wishct.link</p>
+        </footer>
     </main>
-
-    <script>
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const answer = q.nextElementSibling;
-                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-                q.querySelector('span').innerText = answer.style.display === 'block' ? '-' : '+';
-            });
-        });
-    </script>
-</body>
+    
+    </body>
 </html>
