@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <link rel="canonical" href="https://mn588.com/" />
   <link rel="preconnect" href="https://imagedelivery.net" crossorigin>
   
-  <title>Wish Wellness JB | 新山专业男士理疗舒压中心</title>
-  <meta name="description" content="新山（Johor Bahru）Wish Wellness 专为男士设计的专业理疗空间。提供肩颈放松、精油舒压及深度肌肉理疗，环境安静透明，全程预约制。">
+  <title>Wish Wellness JB | 新山新山男士按摩 SPA & 精油舒压中心 (Johor Bahru)</title>
+  
+  <meta name="description" content="新山 (Johor Bahru) 首选正规男士按摩与SPA中心。Wish Wellness 提供专业深层组织按摩、芳香精油推拿及肩颈舒压服务。环境私密高端，缓解疲劳，恢复活力。立即预约体验 JB 最好的男士理疗。">
+  
+  <meta name="keywords" content="新山按摩, Johor Bahru Massage, 新山男士SPA, JB Men's Spa, 精油推拿, 深层理疗, 新山舒压">
+
   <meta name="robots" content="index, follow" />
 
   <style>
+    /* 保持你原有的 CSS 不变，仅增加 FAQ 样式 */
     :root {
       --primary: #1a2a3a;
       --accent: #c5a059; 
@@ -34,105 +40,49 @@
 
     .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
 
-    /* 浮动 WhatsApp 按钮 */
     .floating-ws {
-      position: fixed;
-      right: 20px;
-      bottom: 30px;
-      background: var(--whatsapp);
-      color: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      z-index: 1000;
+      position: fixed; right: 20px; bottom: 30px; background: var(--whatsapp); color: white;
+      width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000;
     }
 
-    header {
-      background: #fff;
-      border-bottom: 1px solid var(--border);
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
     .nav { display: flex; justify-content: space-between; align-items: center; }
     .logo-main { font-size: 22px; font-weight: 700; color: var(--primary); letter-spacing: 1px; }
 
-    /* Hero Section */
     #hero {
       padding: 120px 0;
+      /* 建议：背景图尽量选用看起来“明亮、干净”的SPA环境图，避免昏暗图片 */
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/888hao.png") center/cover;
-      color: #fff;
-      text-align: center;
+      color: #fff; text-align: center;
     }
     .hero-title { font-size: 32px; margin-bottom: 20px; font-weight: 600; }
     .hero-desc { font-size: 18px; max-width: 700px; margin: 0 auto 35px; opacity: 0.9; }
     
-    .btn-ws {
-      display: inline-block;
-      background: var(--whatsapp);
-      color: white;
-      padding: 14px 40px;
-      border-radius: 30px;
-      font-weight: bold;
-      font-size: 18px;
-    }
+    .btn-ws { display: inline-block; background: var(--whatsapp); color: white; padding: 14px 40px; border-radius: 30px; font-weight: bold; font-size: 18px; }
 
-    /* Services */
     section { padding: 80px 0; }
     .section-title { text-align: center; font-size: 28px; margin-bottom: 50px; position: relative; padding-bottom: 15px; }
     .section-title::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 3px; background: var(--accent); }
     
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-    .service-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .service-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
     .service-card img { height: 280px; width: 100%; object-fit: cover; }
     .service-info { padding: 25px; }
     .service-info h3 { margin-bottom: 12px; color: var(--primary); font-size: 20px; }
     .service-info p { color: var(--text-sub); font-size: 15px; }
 
-    /* Footer & Privacy Modal */
-    footer {
-      background: #111;
-      color: #999;
-      padding: 50px 0;
-      text-align: center;
-      font-size: 14px;
-    }
+    /* 新增 FAQ 样式 */
+    .faq-item { background: #f9f9f9; border-radius: 8px; margin-bottom: 15px; padding: 20px; }
+    .faq-question { font-weight: bold; color: var(--primary); margin-bottom: 8px; font-size: 16px; }
+    .faq-answer { font-size: 14px; color: #555; }
+
+    footer { background: #111; color: #999; padding: 50px 0; text-align: center; font-size: 14px; }
     .footer-links { margin-bottom: 20px; }
     .footer-links a { color: #ccc; margin: 0 15px; cursor: pointer; }
 
-    #privacy-modal {
-      display: none;
-      position: fixed;
-      z-index: 2000;
-      left: 0; top: 0; width: 100%; height: 100%;
-      background-color: rgba(0,0,0,0.8);
-    }
-    .modal-content {
-      background-color: #fff;
-      margin: 10% auto;
-      padding: 30px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 600px;
-      max-height: 70vh;
-      overflow-y: auto;
-      text-align: left;
-      color: #333;
-    }
+    #privacy-modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); }
+    .modal-content { background-color: #fff; margin: 10% auto; padding: 30px; border-radius: 10px; width: 80%; max-width: 600px; max-height: 70vh; overflow-y: auto; text-align: left; color: #333; }
 
     @media (max-width: 768px) {
       .services-grid { grid-template-columns: 1fr; }
@@ -149,43 +99,63 @@
   <header>
     <div class="container nav">
       <div class="logo-main">WISH WELLNESS JB</div>
-      <a href="https://wa.me/60166846572" target="_blank" style="color:var(--whatsapp); font-weight:bold;">点此咨询 WhatsApp</a>
+      <a href="https://wa.me/60166846572" target="_blank" style="color:var(--whatsapp); font-weight:bold;">WhatsApp 预约咨询</a>
     </div>
   </header>
 
   <main>
     <section id="hero">
       <div class="container">
-        <h1 class="hero-title">新山男士专享理疗舒压</h1>
-        <p class="hero-desc">在繁忙的新山，为您提供一处安静、整洁、专业的深度放松空间。采用专业手法，告别身体疲惫。</p>
+        <h1 class="hero-title">新山男士按摩与 SPA 舒压中心</h1>
+        <p class="hero-desc">位于 Johor Bahru 核心地段。我们提供干净、私密的环境，专注于男士深层组织按摩、精油推拿与身体护理。告别疲惫，重塑最佳状态。</p>
         <a href="https://wa.me/60166846572" class="btn-ws" target="_blank">立即 WhatsApp 预约</a>
       </div>
     </section>
 
     <section id="services">
       <div class="container">
-        <h2 class="section-title">专业服务项目</h2>
+        <h2 class="section-title">专业 SPA 服务项目</h2>
         <div class="services-grid">
           <div class="service-card">
-            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/fb4f8143-3962-4877-5fc7-e5b1f99ffe00/public" alt="深层理疗">
+            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/fb4f8143-3962-4877-5fc7-e5b1f99ffe00/public" alt="新山深层肌肉理疗按摩">
             <div class="service-info">
-              <h3>深层肌肉理疗</h3>
-              <p>针对长期久坐、开车导致的肩膀僵硬与腰背疲劳，进行深层按压与疏通。</p>
+              <h3>深层肌肉理疗 (Deep Tissue)</h3>
+              <p>针对长期久坐、运动后的肌肉酸痛。理疗师通过深层按压，有效缓解肩颈僵硬与腰背疲劳，促进血液循环。</p>
             </div>
           </div>
           <div class="service-card">
-            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/0ab19db0-0138-44cc-5906-482a64d3bb00/public" alt="精油舒压">
+            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/0ab19db0-0138-44cc-5906-482a64d3bb00/public" alt="新山男士精油SPA">
             <div class="service-info">
-              <h3>芳香精油舒压</h3>
-              <p>温和的精油推拿，旨在舒缓紧张神经，改善睡眠质量，达到身心平衡。</p>
+              <h3>芳香精油 SPA (Aromatherapy)</h3>
+              <p>使用天然植物精油，配合轻柔的推拿手法。旨在舒缓紧张的神经系统，改善睡眠质量，让身心彻底放松。</p>
             </div>
           </div>
           <div class="service-card">
-            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/45db5d60-3ab1-444d-e08b-7dcec3a8b900/public" alt="专业调理">
+            <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/45db5d60-3ab1-444d-e08b-7dcec3a8b900/public" alt="新山身体调理服务">
             <div class="service-info">
-              <h3>定制化调理</h3>
-              <p>经验理疗师根据您的身体受力程度，灵活调整力度，确保舒适高效。</p>
+              <h3>全身舒压护理 (Body Care)</h3>
+              <p>经验丰富的理疗师根据您的身体受力程度，量身定制按摩力度与部位。环境安静，确保您享有高质量的休息时间。</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="background:#fff; padding-top:40px;">
+      <div class="container">
+        <h2 class="section-title">常见问题 (FAQ)</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="faq-item">
+            <div class="faq-question">你们的店铺位置在哪里？</div>
+            <div class="faq-answer">我们位于 Johor Bahru (新山) 核心商业区，交通便利，拥有独立且私密的接待空间。具体定位请通过 WhatsApp 联系我们获取。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">是否需要提前预约？</div>
+            <div class="faq-answer">是的，为了确保每位客人的隐私和服务质量，我们实行全预约制。请提前 30 分钟通过 WhatsApp 预约。</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">技师来自哪些国家？</div>
+            <div class="faq-answer">我们拥有来自不同国家的专业认证技师，经验丰富，能够提供高质量的专业按摩服务。</div>
           </div>
         </div>
       </div>
@@ -193,12 +163,12 @@
 
     <section id="about" style="background:#f4f6f8; text-align:center;">
       <div class="container">
-        <h2 class="section-title">为什么选择我们</h2>
-        <p style="color:#666; max-width:800px; margin: 0 auto 40px;">我们坚持正规经营，专注男士健康。独立包厢确保隐私，每客必换洗，严格把控卫生标准。</p>
-        <p><strong>营业时间：</strong> 14:00 - 02:00 (预约制)</p>
-        <p><strong>坐标：</strong> Johor Bahru (靠近核心商业区)</p>
+        <h2 class="section-title">为什么选择 Wish Wellness</h2>
+        <p style="color:#666; max-width:800px; margin: 0 auto 40px;">我们是新山正规经营的男士健康中心。我们承诺绝无隐形消费，所有疗程透明公开。独立卫浴包厢，坚持一客一换一消毒，给您最安心的体验。</p>
+        <p><strong>营业时间：</strong> 14:00 - 02:00 (Daily)</p>
+        <p><strong>服务区域：</strong> 新山 (Johor Bahru) 及周边地区</p>
         <br><br>
-        <a href="https://wa.me/60166846572" class="btn-ws" target="_blank">获取详细地址定位</a>
+        <a href="https://wa.me/60166846572" class="btn-ws" target="_blank">获取导航定位</a>
       </div>
     </section>
   </main>
@@ -208,8 +178,8 @@
       <div class="footer-links">
         <a onclick="document.getElementById('privacy-modal').style.display='block'">隐私政策 (Privacy Policy)</a>
       </div>
-      <p>© 2025 Wish Wellness & Spa JB. 保留所有权利。</p>
-      <p style="margin-top:10px; font-size:11px; opacity:0.6;">本站仅提供正规男士理疗咨询，严格遵守马来西亚相关法律法规。</p>
+      <p>© 2025 Wish Wellness JB. All Rights Reserved.</p>
+      <p style="margin-top:10px; font-size:11px; opacity:0.6;">本站提供正规男士理疗与按摩咨询，严格遵守马来西亚法律法规。</p>
     </div>
   </footer>
 
@@ -217,12 +187,11 @@
     <div class="modal-content">
       <h3 style="margin-bottom:15px;">隐私政策 Privacy Policy</h3>
       <p style="font-size:13px; line-height:1.8;">
-        欢迎访问 Wish Wellness JB。我们非常重视您的隐私。本政策旨在说明我们如何处理信息：<br><br>
-        1. <strong>信息收集</strong>：本站不主动收集您的个人身份信息，仅在您点击 WhatsApp 咨询时，由第三方平台进行通讯引导。<br>
-        2. <strong>信息使用</strong>：您通过 WhatsApp 提供的信息仅用于预约服务和到店指引，我们承诺不会向任何第三方泄露您的联系方式。<br>
-        3. <strong>Cookies</strong>：Google Ads 可能会使用 Cookies 来评估广告投放效果，这不会识别您的个人身份。<br>
-        4. <strong>外部链接</strong>：本站包含指向 WhatsApp 的链接，请参考其平台的隐私协议。<br><br>
-        如有任何疑问，请随时联系我们的在线客服。
+        欢迎访问 Wish Wellness JB。我们严格保护您的隐私：<br><br>
+        1. <strong>数据收集</strong>：本站不使用表单收集您的个人资料。您的联系方式仅在您主动发起 WhatsApp 聊天时由 WhatsApp 平台处理。<br>
+        2. <strong>数据用途</strong>：所有咨询内容仅用于预约确认，绝不向第三方透露。<br>
+        3. <strong>广告追踪</strong>：本站可能使用 Google Analytics/Ads Cookies 进行匿名流量分析，不涉及个人身份识别。<br>
+        4. <strong>合规声明</strong>：本站内容符合 Google Ads 政策，不包含成人敏感内容。<br><br>
       </p>
       <button onclick="document.getElementById('privacy-modal').style.display='none'" style="margin-top:20px; padding:8px 20px; cursor:pointer;">关闭窗口</button>
     </div>
