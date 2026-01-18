@@ -61,11 +61,28 @@
     .cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 170, 0, 0.5); }
     .cta::after { content: " →"; margin-left: 8px; font-weight: 900; }
 
-    .track-w { background: #0a0a0a; padding: 30px 0; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .track { display: flex; gap: 15px; width: max-content; animation: marquee 40s linear infinite; }
-    .track img { height: 280px; width: auto; aspect-ratio: 3/4; object-fit: cover; border-radius: 8px; border: 1px solid #333; filter: brightness(0.8); transition: filter 0.3s; }
-    .track img:hover { filter: brightness(1); }
-    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+   /* 容器 */
+.track-w { 
+  background: #0a0a0a; 
+  padding: 30px 0; 
+  overflow: hidden; 
+  border-top: 1px solid var(--border); 
+  border-bottom: 1px solid var(--border); 
+}
+
+/* 轨道 */
+.track { 
+  display: flex; 
+  gap: 15px; 
+  width: max-content; /* 重点：让宽度根据内容自动撑开 */
+  animation: marquee 40s linear infinite; /* 重点：infinite 确保无限播放 */
+}
+
+/* 动画关键帧 */
+@keyframes marquee { 
+  from { transform: translateX(0); } 
+  to { transform: translateX(-50%); } /* 重点：只移动 50%，因为内容重复了一倍，移一半刚好回到原点 */
+}
 
     .sec-t { font-size: 28px; margin: 70px 0 30px; border-left: 5px solid var(--accent); padding-left: 15px; font-weight: 800; color: #fff; }
     .content-box { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 16px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
@@ -131,11 +148,19 @@
 
   <div class="track-w">
     <div class="track">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="新山富力公主湾自由身工作室" loading="lazy">
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="新山KSL按摩小姐照片实拍" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="新山富力公主湾自由身工作室" loading="lazy">
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="新山金海湾下水服务预约" loading="lazy">
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="JB高端伴游与约会服务" loading="lazy">
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="新山按摩店真实环境" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d0aef3c8-bd9f-4925-a789-f5eccb715000/sm" alt="新山华人自由身验证视频" loading="lazy">
+  
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="新山KSL按摩小姐照片实拍" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="新山富力公主湾自由身工作室" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="新山金海湾下水服务预约" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="JB高端伴游与约会服务" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="新山按摩店真实环境" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d0aef3c8-bd9f-4925-a789-f5eccb715000/sm" alt="新山华人自由身验证视频" loading="lazy">
     </div>
   </div>
 
