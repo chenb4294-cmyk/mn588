@@ -61,11 +61,51 @@
     .cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 170, 0, 0.5); }
     .cta::after { content: " →"; margin-left: 8px; font-weight: 900; }
 
-    .track-w { background: #0a0a0a; padding: 30px 0; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .track { display: flex; gap: 15px; width: max-content; animation: marquee 40s linear infinite; }
-    .track img { height: 280px; width: auto; aspect-ratio: 3/4; object-fit: cover; border-radius: 8px; border: 1px solid #333; filter: brightness(0.8); transition: filter 0.3s; }
-    .track img:hover { filter: brightness(1); }
-    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  /* 走马灯容器 */
+.track-w { 
+  background: #0a0a0a; 
+  padding: 30px 0; 
+  overflow: hidden; 
+  border-top: 1px solid var(--border); 
+  border-bottom: 1px solid var(--border); 
+  position: relative; /* 确保遮挡溢出 */
+}
+
+/* 轨道：宽度自适应内容 */
+.track { 
+  display: flex; 
+  gap: 15px; 
+  width: max-content; 
+  /* 40s是滚动速度，linear保证匀速，infinite保证循环 */
+  animation: marquee 40s linear infinite; 
+}
+
+/* 鼠标悬停时暂停滚动，提升体验 */
+.track:hover {
+  animation-play-state: paused;
+}
+
+/* 图片样式保持不变 */
+.track img { 
+  height: 280px; 
+  width: auto; 
+  aspect-ratio: 3/4; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  border: 1px solid #333; 
+  filter: brightness(0.8); 
+  transition: filter 0.3s; 
+}
+.track img:hover { 
+  filter: brightness(1); 
+  cursor: pointer;
+}
+
+/* 关键帧：向左移动50%的宽度（因为内容复制了一份，移完一半刚好回到起点） */
+@keyframes marquee { 
+  from { transform: translateX(0); } 
+  to { transform: translateX(-50%); } 
+}
 
     .sec-t { font-size: 28px; margin: 70px 0 30px; border-left: 5px solid var(--accent); padding-left: 15px; font-weight: 800; color: #fff; }
     .content-box { background: var(--card); border: 1px solid var(--border); padding: 30px; border-radius: 16px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
@@ -131,6 +171,12 @@
 
   <div class="track-w">
     <div class="track">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="R&F Princess Cove Studio Interior" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="JB Independent Companion Real Photo" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Danga Bay Wellness Center" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="Premium Escort Service JB" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="KSL City Massage Guide" loading="lazy">
+      
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="R&F Princess Cove Studio Interior" loading="lazy">
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="JB Independent Companion Real Photo" loading="lazy">
       <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Danga Bay Wellness Center" loading="lazy">
