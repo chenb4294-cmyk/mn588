@@ -2,35 +2,8 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wishct.link/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- 站内锚点（可选，但对大型单页有帮助） -->
-  <url>
-    <loc>https://wishct.link/#links</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#modules</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#services</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#faq</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wishct.link/#about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
