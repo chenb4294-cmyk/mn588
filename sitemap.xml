@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://mn588.com/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/"/>
@@ -13,11 +13,65 @@
 
   <url>
     <loc>https://en.mn588.com/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/"/>
+  </url>
+
+  <url>
+    <loc>https://mn588.com/jb-anmo</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/jb-anmo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/massage-jb"/>
+  </url>
+
+  <url>
+    <loc>https://en.mn588.com/massage-jb</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/massage-jb"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/jb-anmo"/>
+  </url>
+
+  <url>
+    <loc>https://mn588.com/jb-zuihao-anmo</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/jb-zuihao-anmo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/best-massage-in-jb"/>
+  </url>
+
+  <url>
+    <loc>https://en.mn588.com/best-massage-in-jb</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/best-massage-in-jb"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/jb-zuihao-anmo"/>
+  </url>
+
+  <url>
+    <loc>https://mn588.com/ciq-anmo</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/ciq-anmo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/ciq-massage"/>
+  </url>
+
+  <url>
+    <loc>https://en.mn588.com/ciq-massage</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://en.mn588.com/ciq-massage"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://mn588.com/ciq-anmo"/>
   </url>
 
 </urlset>
