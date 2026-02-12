@@ -128,13 +128,14 @@
 /* 图片样式保持不变 */
 .track img { 
   height: 280px; 
-  width: auto; 
+  width: 210px;
   aspect-ratio: 3/4; 
   object-fit: cover; 
   border-radius: 8px; 
   border: 1px solid #333; 
   filter: brightness(0.8); 
   transition: filter 0.3s; 
+  flex-shrink: 0;
 }
 .track img:hover { 
   filter: brightness(1); 
@@ -170,20 +171,24 @@
 
     .faq-item { border-bottom: 1px solid #2a2a2a; padding: 20px 0; }
     .faq-item:last-child { border-bottom: none; }
-    .faq-item h4 { color: #fff; margin: 0 0 10px; font-size: 17px; cursor: pointer; }
-    .faq-item p { margin: 0; font-size: 15px; color: #888; }
+    .faq-item h3 { color: #fff; margin: 0 0 10px; font-size: 17px; cursor: pointer; }
+    .faq-item p { margin: 0; font-size: 15px; color: #aaa; }
 
     footer { background: #080808; padding: 60px 0 80px; text-align: center; border-top: 1px solid var(--border); margin-top: 60px; }
     .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
     .footer-links a { color: #fff; text-decoration: none; font-size: 14px; opacity: 0.7; transition: opacity 0.2s; }
     .footer-links a:hover { opacity: 1; color: var(--accent); }
-    .disclaimer { font-size: 12px; color: #444; max-width: 700px; margin: 0 auto; line-height: 1.5; }
+    .disclaimer { font-size: 12px; color: #888; max-width: 700px; margin: 0 auto; line-height: 1.5; }
     
     @media (max-width: 600px) {
       .hero { height: 450px; }
       .content-box { padding: 20px; }
       .price-table { font-size: 13px; }
       .price-table th, .price-table td { padding: 10px; }
+      .track img {
+        width: 150px;
+        height: 200px;
+      }
     }
   </style>
 </head>
@@ -200,7 +205,7 @@
 
 <main>
   <section class="hero">
-    <img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear-1280.webp" class="hero-img" alt="JB R&F Princess Cove Nightlife" width="1280" height="720">
+    <img src="https://pub-332e9390ffd24b43a02cf5c26f826729.r2.dev/images/mnhear-1280.webp" class="hero-img" alt="JB R&F Princess Cove Nightlife" width="1280" height="720" fetchpriority="high">
     <div class="hero-c">
       <div class="update-badge">📅 Updated: <script>document.write(new Date().toLocaleDateString('en-GB'))</script></div>
       <h1><span class="sg-tag">🇸🇬 Singapore's Back Garden</span><br>Just <span>5 Mins</span> from Checkpoint</h1>
@@ -211,17 +216,17 @@
 
   <div class="track-w">
     <div class="track">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="R&F Princess Cove Studio Interior" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="JB Independent Companion Real Photo" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Danga Bay Wellness Center" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="Premium Escort Service JB" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="KSL City Massage Guide" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="R&F Princess Cove Studio Interior" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="JB Independent Companion Real Photo" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Danga Bay Wellness Center" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="Premium Escort Service JB" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="KSL City Massage Guide" loading="lazy" width="210" height="280">
       
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="R&F Princess Cove Studio Interior" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="JB Independent Companion Real Photo" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Danga Bay Wellness Center" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="Premium Escort Service JB" loading="lazy">
-      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="KSL City Massage Guide" loading="lazy">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/d922046e-10f3-4025-2e5e-dc8d0e169600/sm" alt="R&F Princess Cove Studio Interior" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/1c0eb812-6bc9-49fc-a51a-73a243f15500/sm" alt="JB Independent Companion Real Photo" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/3661a3fb-af01-4da6-cce7-d6c90cf57400/sm" alt="Danga Bay Wellness Center" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/6d06ead1-5b66-4e64-294b-c43881046100/sm" alt="Premium Escort Service JB" loading="lazy" width="210" height="280">
+      <img src="https://imagedelivery.net/QifyjLZnubOn-Fn2fFxiYA/116f5ecd-283f-4fd1-34a2-73a6525b0300/sm" alt="KSL City Massage Guide" loading="lazy" width="210" height="280">
     </div>
   </div>
 
@@ -264,7 +269,7 @@
           </tr>
         </tbody>
       </table>
-      <p style="font-size:13px; color:#666; margin-top:15px;">* Exchange rates are for reference. Some studios accept PayNow/WeChat, but Cash (MYR) is king.</p>
+      <p style="font-size:13px; color:#999; margin-top:15px;">* Exchange rates are for reference. Some studios accept PayNow/WeChat, but Cash (MYR) is king.</p>
     </div>
 
     <h2 class="sec-t">III. Singapore Visitor Survival Guide</h2>
@@ -286,23 +291,23 @@
     <h2 class="sec-t">IV. Frequently Asked Questions (FAQ)</h2>
     <div class="content-box">
       <div class="faq-item">
-        <h4>Q: Is R&F Princess Cove safe? Do I need to register ID?</h4>
+        <h3 style="font-size: 17px; margin: 0 0 10px; color: #fff;">Q: Is R&F Princess Cove safe? Do I need to register ID?</h3>
         <p>A: It is very safe. You may need to register at the lobby guardhouse, but studios often provide access cards or pick you up personally for privacy.</p>
       </div>
       <div class="faq-item">
-        <h4>Q: What if I only have SGD cash?</h4>
+        <h3 style="font-size: 17px; margin: 0 0 10px; color: #fff;">Q: What if I only have SGD cash?</h3>
         <p>A: Most providers accept SGD, but you will lose out on the exchange rate. We recommend changing money at the Money Changer near the checkpoint first.</p>
       </div>
       <div class="faq-item">
-        <h4>Q: Can I go and come back quickly?</h4>
+        <h3 style="font-size: 17px; margin: 0 0 10px; color: #fff;">Q: Can I go and come back quickly?</h3>
         <p>A: Absolutely. R&F is designed for quick trips. You can finish your session and walk back to Singapore customs in under 40 minutes total travel time.</p>
       </div>
       <div class="faq-item">
-        <h4>Q: Is there Massage JB near the checkpoint?</h4>
+        <h3 style="font-size: 17px; margin: 0 0 10px; color: #fff;">Q: Is there Massage JB near the checkpoint?</h3>
         <p>A: Yes. R&F Princess Cove is about 650m from the CIQ checkpoint and is walkable in 8-10 minutes. It is one of the closest Massage JB areas to the border.</p>
       </div>
       <div class="faq-item">
-        <h4>Q: What is the best massage in JB for Singapore visitors?</h4>
+        <h3 style="font-size: 17px; margin: 0 0 10px; color: #fff;">Q: What is the best massage in JB for Singapore visitors?</h3>
         <p>A: Many visitors consider R&F Princess Cove the best massage in JB because it is close to CIQ, offers more private studios, and provides better value than Singapore.</p>
       </div>
     </div>
@@ -344,7 +349,7 @@
     <div class="disclaimer">
       <strong>Disclaimer:</strong> MN588 (en.mn588.com) is a lifestyle navigation guide for Johor Bahru. We do not participate in any services. Please comply with Malaysian laws. 
     </div>
-    <p style="margin-top:20px; color:#555; font-size:13px;">&copy; 2026 MN588 JB Directory. All Rights Reserved.</p>
+    <p style="margin-top:20px; color:#999; font-size:13px;">&copy; 2026 MN588 JB Directory. All Rights Reserved.</p>
   </div>
 </footer>
 
